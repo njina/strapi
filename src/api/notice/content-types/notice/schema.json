@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notices",
+  "info": {
+    "singularName": "notice",
+    "pluralName": "notices",
+    "displayName": "Notice",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date",
+      "default": "2022-04-01"
+    },
+    "label": {
+      "type": "enumeration",
+      "enum": [
+        "event",
+        "press"
+      ]
+    }
+  }
+}
